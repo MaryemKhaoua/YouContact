@@ -1,0 +1,29 @@
+<mxfile host="65bd71144e">
+    <diagram id="tSMdISpwyPcjHxtmD6Kb" name="Page-1">
+        <mxGraphModel dx="529" dy="427" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#A8CBFF" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 13px;&quot;&gt;&lt;b style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;id_user&lt;br&gt;username&lt;br&gt;password&lt;br&gt;date_d'inscriptio&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeWidth=3;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="150" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="users" style="whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;strokeColor=#000000;strokeWidth=3;fontSize=22;fontColor=#000000;fillColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="120" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;fontSize=14;fontColor=#000000;" edge="1" parent="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="160" y="200" as="sourcePoint"/>
+                        <mxPoint x="400" y="200" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5" value="&lt;font style=&quot;background-color: rgb(255, 255, 255); font-size: 14px;&quot; color=&quot;#000000&quot;&gt;&lt;b&gt;id_contact&lt;br&gt;nom&lt;br&gt;tel&lt;br&gt;email&lt;br&gt;adresse&lt;br&gt;#id_user&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeWidth=3;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="150" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="contacts" style="whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;strokeColor=#000000;strokeWidth=3;fontSize=22;fontColor=#000000;fillColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="120" width="120" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
