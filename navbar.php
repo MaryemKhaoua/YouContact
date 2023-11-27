@@ -23,8 +23,7 @@
                 </div>
               </nav>
               <!-- end nav bar -->
-        </header>
-      
+        </header> 
     </main>
 </body>
 </html>
