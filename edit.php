@@ -3,16 +3,30 @@
 include 'connexion.php';
 
 $id = $_GET['id'];
-$select = "SELECT * FROM contacts WHERE id_user = $id";
+$select = "SELECT * FROM contacts WHERE id_contact = $id";
 $res = mysqli_query($conn, $select);
 $row = mysqli_fetch_assoc($res);
-    $ID = $row['id_user'];
+    $ID = $row['id_contact'];
     $nom = $row['nom'];
     $tel = $row['tel'];
     $email = $row['email'];
     $adresse = $row['adresse'];
  
-
+    if (isset($_POST['submit'])) {
+        $id=$_POST["id"];
+        $nom = $_POST["nom"];
+        $tel = $_POST["tel"];
+        $email = $_POST["email"];
+        $adresse = $_POST["adresse"];
+        $sql = "UPDATE `contacts` SET `nom`='$nom',`tel`='$tel',`email`='$email',`adresse`='$adresse' WHERE id_contact='$id'";
+        $resu=mysqli_query($conn, $sql);
+        if($resu){
+        header('location: index.php'); }
+    else{
+        header('location: home.php');
+    }
+    }
+    
 
 
 ?>
@@ -27,7 +41,7 @@ $row = mysqli_fetch_assoc($res);
 <body>
 <div class="container my-5">
     <h2>Edit Contact</h2>
-    <form method="post" action="./update.php">
+    <form method="post" action="">
         <input type="hidden"  name="id" value="<?php echo $ID ?>">
         <div class="row mb-3">
             <label class="col-sm-3 col-form-label">Nom</label>

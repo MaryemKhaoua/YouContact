@@ -41,8 +41,8 @@
                 <td>$row[email]</td>
                 <td>$row[adresse]</td>
                 <td>
-                    <a class='btn btn-primary btn-sm' href='/php/edit.php?id=$row[id_contact]'>Edit</a>
-                    <a class='btn btn-danger btn-sm' href='./delete.php?id=$row[id_contact]'>delete</a>
+                    <a class='btn btn-primary btn-sm' href='edit.php?id=$row[id_contact]'>Edit</a>
+                    <a class='btn btn-danger btn-sm' href='delete.php?id=$row[id_contact]'>delete</a>
                 </td>
                 </tr> ";
             }

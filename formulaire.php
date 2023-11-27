@@ -11,7 +11,7 @@ include 'connexion.php';
     <title>YouContact</title>
 </head>
 <body>
-
+  <?php include 'navbar.php'; ?>
     <main class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-4">
@@ -51,16 +51,5 @@ if (isset($_POST['inscri'])) {
 
     $sql = "INSERT INTO utilisateurs (username, pssword, date_iscription) VALUES ('$username', '$password', '$date')";
     $result = mysqli_query($conn, $sql);
-
-    if ($result) {
-        $id_profil = mysqli_insert_id($conn);
-
-        $_SESSION['id_profil'] = $id_profil;
-
-        header("Location: login.php");
-        exit();
-    } else {
-        echo "Erreur lors de l'inscription : " . mysqli_error($conn);
-    }
 }
 ?>

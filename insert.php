@@ -18,7 +18,7 @@ include 'connexion.php';
     if ($result) {
         echo "Contact added successfully.";
     } else {
-        echo "Error: " . mysqli_error($conn);
+        echo "Error";
     }
      }
 ?>
