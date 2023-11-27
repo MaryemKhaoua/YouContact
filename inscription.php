@@ -1,5 +1,6 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST")
+(isset($_POST['submit'])){
+    
 $Nom= ($_POST["Nom"]);
 $tel = ($_POST["tel"]);
 $email = ($_POST["email"]);
@@ -20,5 +21,5 @@ if (strlen($Nom) < 2 )
     mysqli_query($conn, $sql);
 
 header("Location: formulaire.php");
-    
+}
 ?>
